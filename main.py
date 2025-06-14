@@ -16,8 +16,10 @@ def convert_to_snake_case(pascal_or_camel_cased_string):
     clean_snake_cased_string = snake_cased_string.strip('_')
     return clean_snake_cased_string
 
+    
+    
     #Phase 2: List Comprehension
-    #(Unreachable unless you comment out the return above)
+
 def convert_to_snake_case_comprehension(string):
     snake_cased_char_list = [
         '_' + char.lower() if char.isupper() else char
