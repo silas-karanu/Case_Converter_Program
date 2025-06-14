@@ -11,12 +11,13 @@ def convert_to_snake_case(pascal_or_camel_cased_string):
              snake_cased_char_list.append(char)
 
     #Join characters into a single string with no space between them
-     snake_cased_string = ''.join(snake_cased_char_list)
+    snake_cased_string = ''.join(snake_cased_char_list)
     #Removing leading and trailing underscores
-     clean_snake_cased_string = snake_cased_string.strip('_')
-     return clean_snake_cased_string
+    clean_snake_cased_string = snake_cased_string.strip('_')
+    return clean_snake_cased_string
 
-    #Phase 2 List Comprehension
+    #Phase 2: List Comprehension
+    # (Unreachable unless you comment out the return above)
     snake_cased_char_list = [
         '_' + char.lower() if char.isupper() else char
         for char in pascal_or_camel_cased_string
